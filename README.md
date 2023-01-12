@@ -1,4 +1,4 @@
-# Rock-Paper-Scissors-Lizard-Spock
+#  :game_die: Rock-Paper-Scissors-Lizard-Spock :game_die:
 
 Console-application in C#. 
 
