@@ -7,7 +7,7 @@ public class Program
     static void Main(string[] args)
     {
         Console.ForegroundColor = ConsoleColor.Magenta;
-        //Variabel will be used in while-loop
+        //Variable will be used in while-loop
         bool gameStart = true;
 
         //Both the player and computer have 0 point when the game starts
