@@ -7,13 +7,16 @@ public class Program
     static void Main(string[] args)
     {
         Console.ForegroundColor = ConsoleColor.Magenta;
-
+        //Variabel will be used in while-loop
         bool gameStart = true;
+
         //Both the player and computer have 0 point when the game starts
         int playerScore = 0;
         int computerScore = 0;
+
         //Welcome-message
         Console.WriteLine("Welcome to the game Rock, Paper, Scissors, Lizard, Spock game. Enter your name:");
+
         //Store the players name
         string name = Console.ReadLine();
 
@@ -34,7 +37,6 @@ public class Program
 
             //Control if input is a number with a bool
             bool success = playerNum.All(Char.IsDigit);
-
             // If bool is false
             if (!success)
             {
@@ -52,7 +54,6 @@ public class Program
                     Console.WriteLine(Environment.NewLine + "Number must be between 1 and 5 ");
 
                 }
-
 
                 //Create a random number between 1 and 6, which the computer plays with
                 Random randomNum = new Random();
