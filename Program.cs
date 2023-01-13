@@ -12,7 +12,7 @@ public class Program
         //Both the player and computer have 0 point when the game starts
         int playerScore = 0;
         int computerScore = 0;
-
+        //Welcome-message
         Console.WriteLine("Welcome to the game Rock, Paper, Scissors, Lizard, Spock game. Enter your name:");
         //Store the players name
         string name = Console.ReadLine();
@@ -34,6 +34,7 @@ public class Program
 
             //Control if input is a number with a bool
             bool success = playerNum.All(Char.IsDigit);
+
             // If bool is false
             if (!success)
             {
@@ -43,7 +44,6 @@ public class Program
             {
 
                 //Convert the players number to an integer to controll it
-
                 int playerNumInt = int.Parse(playerNum);
 
                 //The number must be between 1 and 5 to play
@@ -66,14 +66,14 @@ public class Program
                     case 1:
                         if (playerNum == "1")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Rock");
+                            Console.WriteLine(Environment.NewLine + $"{name} chose Rock");
                             Console.WriteLine("Computer chose Rock");
                             Console.WriteLine("It is a tie.");
                         }
 
                         else if (playerNum == "2")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Paper");
+                            Console.WriteLine(Environment.NewLine +  $"{name} chose Paper");
                             Console.WriteLine("Computer chose Rock");
                             Console.WriteLine($"Paper covers Rock, {name} wins!");
                             //player gets a point
@@ -81,7 +81,7 @@ public class Program
                         }
                         else if (playerNum == "3")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Scissors");
+                            Console.WriteLine(Environment.NewLine +  $"{name} chose Scissors");
                             Console.WriteLine("Computer chose Rock");
                             Console.WriteLine("Rock crushes Scissors, computer wins!");
                             //computer gets a point
@@ -89,14 +89,14 @@ public class Program
                         }
                         else if (playerNum == "4")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Lizard");
+                            Console.WriteLine(Environment.NewLine +  $"{name} chose Lizard");
                             Console.WriteLine("Computer chose Rock");
                             Console.WriteLine("Rock crushes Lizard, computer wins!");
                             computerScore++;
                         }
                         else if (playerNum == "5")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Spock");
+                            Console.WriteLine(Environment.NewLine +  $"{name} chose Spock");
                             Console.WriteLine("Computer chose Rock");
                             Console.WriteLine($"Spock vaporizes rock, {name} wins!");
                             playerScore++;
@@ -109,7 +109,7 @@ public class Program
                         if (playerNum == "1")
                         {
 
-                            Console.WriteLine(Environment.NewLine + "Player chose Rock");
+                            Console.WriteLine(Environment.NewLine +  $"{name} chose Rock");
                             Console.WriteLine("Computer chose Paper");
                             Console.WriteLine($"Paper covers Rock, computer wins");
                             computerScore++;
@@ -117,7 +117,7 @@ public class Program
 
                         else if (playerNum == "2")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Paper");
+                            Console.WriteLine(Environment.NewLine + $"{name} chose Paper");
                             Console.WriteLine("Computer chose Paper");
                             Console.WriteLine("It is a tie!");
                             //player get point
@@ -125,21 +125,21 @@ public class Program
                         }
                         else if (playerNum == "3")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Scissors");
+                            Console.WriteLine(Environment.NewLine +  $"{name} chose Scissors");
                             Console.WriteLine("Computer chose Paper");
                             Console.WriteLine("Scissors cuts paper, computer wins");
                             computerScore++;
                         }
                         else if (playerNum == "4")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Lizard");
+                            Console.WriteLine(Environment.NewLine +  $"{name} chose Lizard");
                             Console.WriteLine("Computer chose Paper");
                             Console.WriteLine($"Lizard eats paper,{name} wins");
                             playerScore++;
                         }
                         else if (playerNum == "5")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Spock");
+                            Console.WriteLine(Environment.NewLine +  $"{name} chose Spock");
                             Console.WriteLine("Computer chose Paper");
                             Console.WriteLine("Paper disproves Spock, computer wins");
                             computerScore++;
@@ -152,7 +152,7 @@ public class Program
                         if (playerNum == "1")
                         {
 
-                            Console.WriteLine(Environment.NewLine + "Player chose Rock");
+                            Console.WriteLine(Environment.NewLine +  $"{name} chose Rock");
                             Console.WriteLine("Computer chose Scissors");
                             Console.WriteLine($"Rock crushes scissors, {name} wins");
                             //player get point
@@ -161,27 +161,27 @@ public class Program
 
                         else if (playerNum == "2")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Paper");
+                            Console.WriteLine(Environment.NewLine +  $"{name} chose Paper");
                             Console.WriteLine("Computer chose Scissors");
                             Console.WriteLine("Scissors cuts paper, computer wins");
                             computerScore++;
                         }
                         else if (playerNum == "3")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Scissors");
+                            Console.WriteLine(Environment.NewLine +  $"{name} chose Scissors");
                             Console.WriteLine("Computer chose Scissors");
                             Console.WriteLine("It is a tie");
                         }
                         else if (playerNum == "4")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Lizard");
+                            Console.WriteLine(Environment.NewLine + $"{name} chose Lizard");
                             Console.WriteLine("Computer chose Scissors");
                             Console.WriteLine("Scissors decapitates lizard, computer wins");
                             computerScore++;
                         }
                         else if (playerNum == "5")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Spock");
+                            Console.WriteLine(Environment.NewLine + $"{name} chose Spock");
                             Console.WriteLine("Computer chose Scissors");
                             Console.WriteLine($"Spock smashes scissors, {name} wins");
                             playerScore++;
@@ -192,7 +192,7 @@ public class Program
                     case 4:
                         if (playerNum == "1")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Rock");
+                            Console.WriteLine(Environment.NewLine + $"{name} chose Rock");
                             Console.WriteLine("Computer chose Lizard");
                             Console.WriteLine($"Rock crushes Lizard, {name} wins");
                             //player gets point
@@ -201,28 +201,28 @@ public class Program
 
                         else if (playerNum == "2")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Paper");
+                            Console.WriteLine(Environment.NewLine + $"{name} chose Paper");
                             Console.WriteLine("Computer chose Lizard");
                             Console.WriteLine("Lizard eats paper, computer wins");
                             computerScore++;
                         }
                         else if (playerNum == "3")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Scissors");
+                            Console.WriteLine(Environment.NewLine +  $"{name} chose Scissors");
                             Console.WriteLine("Computer chose Lizard");
                             Console.WriteLine("Scissors decapitates lizard, computer wins");
                             computerScore++;
                         }
                         else if (playerNum == "4")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Lizard");
+                            Console.WriteLine(Environment.NewLine + $"{name} chose Lizard");
                             Console.WriteLine("Computer chose Lizard");
                             Console.WriteLine("It is a tie");
 
                         }
                         else if (playerNum == "5")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Spock");
+                            Console.WriteLine(Environment.NewLine +  $"{name} chose Spock");
                             Console.WriteLine("Computer chose Lizard");
                             Console.WriteLine($"Lizard poisons Spock, computer wins");
                             computerScore++;
@@ -234,7 +234,7 @@ public class Program
                     case 5:
                         if (playerNum == "1")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Rock");
+                            Console.WriteLine(Environment.NewLine +  $"{name} chose Rock");
                             Console.WriteLine("Computer chose Spock");
                             Console.WriteLine("Spock vaporizes rock, computer wins");
                             //computer gets point
@@ -243,29 +243,29 @@ public class Program
 
                         else if (playerNum == "2")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Paper");
+                            Console.WriteLine(Environment.NewLine + $"{name} chose Paper");
                             Console.WriteLine("Computer chose Spock");
                             Console.WriteLine($"Paper disproves Spock, {name} wins");
                             playerScore++;
                         }
                         else if (playerNum == "3")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Scissors");
+                            Console.WriteLine(Environment.NewLine +  $"{name} chose Scissors");
                             Console.WriteLine("Computer chose Spock");
                             Console.WriteLine("Spock smashes scissors, computer wins");
                             computerScore++;
                         }
                         else if (playerNum == "4")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Lizard");
+                            Console.WriteLine(Environment.NewLine +  $"{name} chose Lizard");
                             Console.WriteLine("Computer chose Spock");
-                            Console.WriteLine($"Lizard poisons Spcok, {name} wins");
+                            Console.WriteLine($"Lizard poisons Spock, {name} wins");
                             playerScore++;
 
                         }
                         else if (playerNum == "5")
                         {
-                            Console.WriteLine(Environment.NewLine + "Player chose Spock");
+                            Console.WriteLine(Environment.NewLine +  $"{name} chose Spock");
                             Console.WriteLine("Computer chose Spock");
                             Console.WriteLine("It is a tie!");
 
